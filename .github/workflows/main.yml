@@ -23,13 +23,13 @@ jobs:
       - uses: actions/checkout@v2
 
      
-   #install NodeJS
+   # install NodeJS
    - name: Install NodeJS
      uses: actions/setup-node@v2-beta
      with: 
        node-version: 12
        
-   #install yarn
+   # install yarn
    - uses: borales/actions-yarn@v2.0.0
      with:
        cmd: install # will run 'yarn install' command
@@ -38,7 +38,7 @@ jobs:
      - name: Build react app
        run: yarn build
        
-   #install surge
+   # install surge
      - name: isntall surge
        run: npm isntall -global surge
    
